@@ -25,6 +25,7 @@ body {
 }
 
 header.header {
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
@@ -86,7 +87,7 @@ section {
 }
 
 .home-container {
-    background: url("img/home-img.jpg");
+    background: url("../img/home-img.jpg");
     height: 100vh;
     background-position: center;
     background-size: cover;
