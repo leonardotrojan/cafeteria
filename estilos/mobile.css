@@ -1,4 +1,53 @@
-@media screen and (max-width: 468px) {
+@media screen and (max-width: 600px) {
+    
+    .home-container {
+        width: 100%;
+    }
+
+    .home-container .content p {
+        text-shadow: 5px 5px 3px black;
+    }
+
+    .image-container img {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .home-container {
+        
+    }
+
+    header .navbar #burger-btn {
+        display: block;
+        cursor: pointer;
+    }
+
+    header .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header #links {
+        display: none;
+        flex-direction: column;
+    }
+
+    #links.active {
+        display: flex;
+    }
+
+    header .navbar a {
+        padding: 1rem 0rem;
+    }
+
+    .about .row {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 910px) {
     .about .row {
         flex-direction: column;
     }

@@ -20,6 +20,10 @@
     font-family: "Roboto", sans-serif;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     background-color: var(--bg);
 }
@@ -45,14 +49,34 @@ header section {
 
 section {
     padding: 3rem 2rem;
+}
+
+.about, .menu, .review, .address {
     margin: 0 auto;
     max-width: 1200px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar #burger-btn {
+    display: none;
+    color: #fff;
+    font-size: 4rem;
+}
+
+#links {
+    display: flex;
+    flex-direction: row;
 }
 
 .navbar a {
     margin: 0 1rem;
     font-size: 1.8rem;
     color: #fff;
+    display: block;
 }
 
 .navbar a:hover {
@@ -87,10 +111,9 @@ section {
 }
 
 .home-container {
-    background: url("../img/home-img.jpg");
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
+    background: url("../img/home-img.jpg") center/cover no-repeat;
+    width: 100%;
+    margin-top: 3rem;
 }
 
 .home-container section {
@@ -134,6 +157,11 @@ section {
     align-items: center;
     background-color: var(--black);
     gap: 1.5rem;
+}
+
+.about .row .container-image img {
+    max-width: 100%;
+    height: auto;
 }
 
 .about .row .content {
